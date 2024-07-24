@@ -1,0 +1,61 @@
+/* SkeletonLoader.css */
+
+.skeleton-loader-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .skeleton-loader-card {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    animation: fadeIn 0.5s ease-out; /* Add animation for fade-in effect */
+  }
+  
+  .skeleton-loader-image {
+    width: 100%;
+    height: 60%;
+    background-color: #ddd;
+    animation: skeletonLoading 1.5s infinite alternate; /* Add animation for pulsating effect */
+  }
+  
+  .skeleton-loader-details {
+    padding: 10px;
+  }
+  
+  .skeleton-loader-title {
+    width: 70%;
+    height: 15px;
+    background-color: #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .skeleton-loader-description {
+    width: 90%;
+    height: 15px;
+    background-color: #ddd;
+  }
+  
+  /* Keyframes for animations */
+  @keyframes skeletonLoading {
+    0% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
